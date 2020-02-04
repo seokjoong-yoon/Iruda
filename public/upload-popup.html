@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Iruda</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="dark-background">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand font-bold" href="#">이루다</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-dropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-dropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link font-medium" href="#">내 달력</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-medium" href="#">친구</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-medium" href="#">구경하기</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-medium font-pink" href="#">로그아웃</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="interest-container white-background">
+                <h3 class="font-medium-black interest-h1">게시글 업로드</h3>
+                <!-- 날짜 -->
+                <h1 class="upload-h1 font-bold-black">2020.02.07</h1>
+                <hr class="upload-hr-top">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="upload-img" src="images/uploaded-images/weight.jpeg" alt="">
+                    </div>
+                    <div class="col-lg-6 upload-container-right">
+                        <img class="upload-upload-btn" src="images/upload.png" alt="">
+                        <button class="upload-delete btn btn-sm btn-outline-danger">삭제</button>
+                        <img class="upload-heart" src="images/heart.png" alt="">
+                        <!-- 하트 갯수 -->
+                        <div class="upload-heart-num">
+                            <h4 class="font-light-black">0</h4>
+                        </div>
+                        <p class="upload-alert font-light-black">50자 이내로 설명해주세요.</p>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">메시지</span>
+                            </div>
+                            <textarea class="form-control" aria-label="메시지"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <hr class="upload-hr-top">
+                <p>연관 목표를 선택하세요.</p>
+                <div class="upload-img-container">
+                    <img class="upload-goal upload-goal1" src="images/exercise.png" alt="">
+                    <img class="upload-goal upload-goal2" src="images/smoke.png" alt="">
+                    <img class="upload-goal upload-goal3" src="images/selfdev.png" alt="">
+                    <img class="upload-goal upload-goal4" src="images/save.png" alt="">
+                    <img class="upload-goal upload-goal5" src="images/certificate.png" alt="">
+                    <img class="upload-goal upload-goal6" src="images/language.png" alt="">
+                    <img class="upload-goal upload-goal7" src="images/alcohol.png" alt="">
+                    <img class="upload-goal upload-goal8" src="images/travel.png" alt="">
+                    <img class="upload-goal upload-goal9" src="images/book.png" alt="">
+                </div>
+                <hr>
+                <div class="upload-btn">
+                    <button class="btn btn-lg btn-outline-danger upload-next">업로드</button>
+                    <button class="btn btn-lg btn-outline-danger upload-cancel">취소</button>
+                </div>
+            </div>
+        </div>
+        <footer class="interest-footer dark-background">
+            <p class="font-light">Copyright 2020 Freeman Inc. All rights reserved.</p>
+        </footer>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/upload-popup.js"></script>
+</html>
